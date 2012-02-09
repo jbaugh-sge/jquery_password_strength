@@ -2,7 +2,7 @@
   A.extend A.fn,
     pstrength: (B) ->
       B = A.extend(
-        verdects: [ "Very weak", "Weak", "Medium", "Strong", "Very strong" ]
+        verdicts: [ "Very weak", "Weak", "Medium", "Strong", "Very strong" ]
         colors: [ "#f00", "#c06", "#f60", "#3c0", "#3f0" ]
         scores: [ 10, 15, 30, 40 ]
         common: [ "password", "sex", "god", "123456", "123", "liverpool", "letmein", "qwerty", "monkey" ]
@@ -32,33 +32,33 @@
         else
           if nPerc <= C.scores[0]
             strColor = C.colors[0]
-            strText = C.verdects[0]
+            strText = C.verdicts[0]
             A(B).css width: "10%"
           else
             if nPerc > C.scores[0] and nPerc <= C.scores[1]
               strColor = C.colors[1]
-              strText = C.verdects[1]
+              strText = C.verdicts[1]
               A(B).css width: "25%"
             else
               if nPerc > C.scores[1] and nPerc <= C.scores[2]
                 strColor = C.colors[2]
-                strText = C.verdects[2]
+                strText = C.verdicts[2]
                 A(B).css width: "50%"
               else
                 if nPerc > C.scores[2] and nPerc <= C.scores[3]
                   strColor = C.colors[3]
-                  strText = C.verdects[3]
+                  strText = C.verdicts[3]
                   A(B).css width: "75%"
                 else
                   strColor = C.colors[4]
-                  strText = C.verdects[4]
+                  strText = C.verdicts[4]
                   A(B).css width: "92%"
       A(B).css backgroundColor: strColor
       A(E).html "<span style='color: " + strColor + ";'>" + strText + "</span>"
 
     checkPassword: (C, B) ->
       F = 0
-      E = B.verdects[0]
+      E = B.verdicts[0]
       if C.length < B.minchar
         F = (F - 100)
       else
