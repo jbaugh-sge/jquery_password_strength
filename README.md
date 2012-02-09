@@ -1,4 +1,4 @@
-# Ajax Password Strength
+# Jquery Password Strength
 This is a fork of a project that isn't on GitHub, but is released under the MIT license, so nyaa :)
 It basically checks your password as you type it in and returns a colored bar that informs users of their password's relative strength.
 I make no claims to the original source, or its effectiveness, but I intend to modify the crap out of it, until it suits my purposes.
